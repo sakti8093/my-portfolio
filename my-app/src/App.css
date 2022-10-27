@@ -1,10 +1,42 @@
 .App{
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
+}
+
+.NavBar{
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+
 }
 .myNameHomePage{
   animation: color-change 7s infinite;
-  font-size: 60px;
+  font-size: 80px;
 }
+/* for wave */
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+
+/* #home{
+  
+  background-image: url(https://img.freepik.com/free-vector/flat-geometric-background_23-2148957201.jpg?w=2000);
+} */
+
 @keyframes  color-change {
   0% { color: palevioletred; }
   50% { color: blue; }
@@ -18,7 +50,7 @@
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: black;
+  color: white;
 }
 
 .hover-underline-animation:after {
@@ -46,6 +78,7 @@
 }
 .hover-1:hover {
   --i: 1;
+  color: white;
 }
 .hover-2 {
   background: 
@@ -55,6 +88,7 @@
 }
 .hover-2:hover {
   --i: 1;
+  color: white;
 }
 .custom-btn {
   width: 130px;
@@ -74,78 +108,8 @@
    4px 4px 5px 0px rgba(0,0,0,.1);
   outline: none;
 }
-.btn-7 {
-background: linear-gradient(0deg, rgba(255,151,0,1) 0%, rgba(251,75,2,1) 100%);
-  line-height: 42px;
-  padding: 0;
-  border: none;
-}
-.btn-7 span {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.btn-7:before,
-.btn-7:after {
-  position: absolute;
-  content: "";
-  right: 0;
-  bottom: 0;
-  background: rgba(251,75,2,1);
-  box-shadow:
-   -7px -7px 20px 0px rgba(255,255,255,.9),
-   -4px -4px 5px 0px rgba(255,255,255,.9),
-   7px 7px 20px 0px rgba(0,0,0,.2),
-   4px 4px 5px 0px rgba(0,0,0,.3);
-  transition: all 0.3s ease;
-}
-.btn-7:before{
-   height: 0%;
-   width: 2px;
-}
-.btn-7:after {
-  width: 0%;
-  height: 2px;
-}
-.btn-7:hover{
-  color: rgba(251,75,2,1);
-  background: transparent;
-}
-.btn-7:hover:before {
-  height: 100%;
-}
-.btn-7:hover:after {
-  width: 100%;
-}
-.btn-7 span:before,
-.btn-7 span:after {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  background: rgba(251,75,2,1);
-  box-shadow:
-   -7px -7px 20px 0px rgba(255,255,255,.9),
-   -4px -4px 5px 0px rgba(255,255,255,.9),
-   7px 7px 20px 0px rgba(0,0,0,.2),
-   4px 4px 5px 0px rgba(0,0,0,.3);
-  transition: all 0.3s ease;
-}
-.btn-7 span:before {
-  width: 2px;
-  height: 0%;
-}
-.btn-7 span:after {
-  height: 2px;
-  width: 0%;
-}
-.btn-7 span:hover:before {
-  height: 100%;
-}
-.btn-7 span:hover:after {
-  width: 100%;
-}.btn-11 {
+
+  .btn-11 {
   border: none;
   background:#ff4c60;
     background: linear-gradient(0deg, rgba(251,33,117,1) 0%, rgba(234,76,137,1) 100%);
@@ -184,3 +148,194 @@ background: linear-gradient(0deg, rgba(255,151,0,1) 0%, rgba(251,75,2,1) 100%);
     81% {transform: scale(4) rotate(45deg); opacity: 1; }
     100% {transform: scale(50) rotate(45deg); opacity: 0; }
 }
+.progress{
+    
+    width: 100%;
+    height: 6px;
+    background: #fff;
+    border-radius: 0;
+    box-shadow: none;
+    margin-top: 70px;
+    overflow: visible;
+}
+.progress .progress-bar{
+    box-shadow: none;
+    border-radius: 5px;
+    position: relative;
+    animation: animate-positive 2s;
+}
+.progress .progress-title{
+   
+    min-width: 100px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #282828;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    background: #fff;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.14);
+    position: absolute;
+    top: -10px;
+    left: 0;
+}
+.progress .progress-value{
+    width: 50px;
+    height: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 25px;
+    border-radius: 4px;
+    position: absolute;
+    top: -40px;
+    right: 0;
+}
+.progress.pink .progress-bar,
+.progress.pink .progress-value{ background: #ff007f; }
+.progress.green .progress-bar,
+.progress.green .progress-value{ background: #73cd21; }
+.progress.blue .progress-bar,
+.progress.blue .progress-value{ background: #2e9ce0; }
+.progress.yellow .progress-bar,
+.progress.yellow .progress-value{ background: #eea921; }
+.progress.red .progress-bar,
+.progress.red .progress-value{ background: #ff014f; }
+@-webkit-keyframes animate-positive{
+    0%{ width: 0; }
+}
+@keyframes animate-positive{
+    0%{ width: 0; }
+}
+/* skill bar */
+.skills {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background:#f1f1f1;
+  border-radius: 10px;
+}
+
+
+
+.skills-bar .bar {
+  margin: 25px 0;
+}
+
+.skills-bar .bar .info span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.skills-bar .bar .info {
+  margin-bottom: 8px;
+  color: #07374a;
+}
+
+.skills-bar .bar .progress-line {
+  position: relative;
+  height: 10px;
+  width: 100%;
+  background:#f1f1f1;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line span {
+  position: absolute;
+  background : linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  height: 100%;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  text-transform: uppercase;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progress-line .html {
+  width: 80%;
+}
+.progress-line .css {
+  width: 70%;
+}
+.progress-line .bootstrap {
+  width: 82%;
+}
+.progress-line .javascript {
+  width: 62%;
+}
+.progress-line .c {
+  width: 90%;
+}
+
+.bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -14px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-style: #f0f0f0;
+  border-top-color: #07374a;
+}
+
+.bar .progress-line span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color: #f0f0f0;
+  font-size: 12px;
+  font-weight: 700;
+  background: #07374a;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+
+.progress-line .html::after {
+  content: "80%";
+}
+.progress-line .css::after {
+  content: "70%";
+}
+.progress-line .bootstrap::after {
+  content: "82%";
+}
+.progress-line .javascript::after {
+  content: "62%";
+}
+.progress-line .c::after {
+  content: "90%";
+}
+
+/* ////........Media Query........//// */
+
+@media (max-width: 700px) {
+    .skills{
+        width: 80%;
+    }
+
+    .skills-bar .bar .progress-line{
+        width: 100%;
+    }
+}  
+
+/* projects */
+.ProjetcsBox img:hover{
+  transition: 0.5s all ease-in-out;
+    transform: scale(1.1)
+}
+/*liquid fill  */
