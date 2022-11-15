@@ -17,7 +17,7 @@ function App() {
     <Box bg={bg} > 
     <Navbar/>
       <HomePage/>
-    <Box className='App' width={{ base:'90%' , sm:'90%' ,md:'80%' ,lg:'80%' }}  margin='auto' marginTop='30px' >
+    <Box className='App' width={{ base:'97%' , sm:'fill' ,md:'80%' ,lg:'80%' }}  margin='auto' marginTop='30px' >
       <About/>
       <Projetcs/>
       <Git/>

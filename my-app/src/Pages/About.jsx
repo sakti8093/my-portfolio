@@ -25,7 +25,7 @@ export default function About() {
   return (
     <Box id='about'  >  
     <Text  fontFamily= 'Poppins, sans-serif' fontSize='30px' mt={2} mb={10} textAlign='center' >About Me</Text>
-    <Box display={{ base:'flex' ,sm:'flex' ,md:'flex' ,lg:'flex' }} flexWrap='wrap' width='95%' margin='auto' justifyContent='space-evenly' boxShadow=' rgba(0, 0, 0, 0.35) 0px 5px 15px' p={8}  borderRadius='20px'  >
+    <Box display={{ base:'flex' ,sm:'flex' ,md:'flex' ,lg:'flex' }} flexWrap='wrap' width='100%' margin='auto' justifyContent='space-evenly' boxShadow=' rgba(0, 0, 0, 0.35) 0px 5px 15px' p={8}  borderRadius='20px'  >
          <Box data-aos="fade-right" width={{ base:'100%', sm:'100%',md:'40%' ,lg:'40%' }} gap='10%'>
                    <Box>
                     <Image src={MyPhoto} borderRadius='50%' width='40%' margin='auto' mt={2} mb={6} />

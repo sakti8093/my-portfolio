@@ -2,6 +2,7 @@ import { Box, Grid, GridItem, Image, Text ,Button, UnorderedList, List, ListItem
 import React from 'react'
 import boat from '../Assets/Boat.png'
 import firstpost from '../Assets/firstpost.png'
+import tenner from '../Assets/tenner.png'
 import { AiFillGithub } from 'react-icons/ai';
 import {CheckCircleIcon } from '@chakra-ui/icons'
 
@@ -85,7 +86,43 @@ export default function Projetcs() {
                         <a href="https://firstpost-clone.netlify.app/view.html" target='blank'><Button  backgroundImage=' linear-gradient(15deg, red 0%, violet 100% )' color='white' className='button-wiggle'> LIVE LINK</Button></a>
                       </Box>
             </Box>
+            <Box mt='20px' data-aos="fade-up" className='ProjetcsBox' gap='30px' p={1}  borderRadius='20px' >
+              <Image width='fill' margin='auto' height='350px' src={tenner} borderRadius='20px' />
+                 <Text width='90%' margin='auto' >Tenner Goods is a e-commerce app which deals with wooden goods,This is a <span style={{ fontWeight:'1000' }} >Indivisual</span>  clone cum creativity project of mine  </Text>
+                 <Text>Features</Text>
+                 <List p={2}>
+                 <ListItem>
+                    <ListIcon as={CheckCircleIcon} color='green'  />
+                    Completely Responsive
+                  </ListItem>
+                  <ListItem>
+                    <ListIcon as={CheckCircleIcon} color='green'  />
+                    Covered above 10 categories of news
+                  </ListItem>
+                  <ListItem>
+                    <ListIcon as={CheckCircleIcon} color='green'  />
+                    Create news,Update news,Delete news by admin
+                  </ListItem>
+                  </List>
+                  <Text>TECH STACK USED</Text>
+                  <Grid gridTemplateColumns='repeat(4,1fr)' gap='10px' width='90%' margin='auto'>
+                    <Box  textAlign='center' borderRadius='10px' border='3px solid violet' >JSON </Box>
+                    <Box  textAlign='center' borderRadius='10px' border='3px solid violet' >JAVA SCRIPT</Box>
+                    <Box  textAlign='center' borderRadius='10px' border='3px solid violet' >HTML</Box>
+                    <Box  textAlign='center' borderRadius='10px' border='3px solid violet' >CSS</Box>
+                    <Box  textAlign='center' borderRadius='10px' border='3px solid violet' >REACT</Box>
+                    <Box  textAlign='center' borderRadius='10px' border='3px solid violet' >BOOTSTRAP</Box>
+                    <Box  textAlign='center' borderRadius='10px' border='3px solid violet' >GIT</Box>
+                    <Box  textAlign='center' borderRadius='10px' border='3px solid violet' >HEROKU</Box>
+                    </Grid>
+                      <Box  bottom='1' display='flex' gap='20px'  mt='20px' p={4} >
+                     <a href="https://github.com/sakti8093/firstpost" target='blank' >  <Button bg='black' color='white' leftIcon={ <AiFillGithub />} >   GITHUB</Button></a> 
+                        <a href="https://tender-goods-clone-sakti.netlify.app/" target='blank'><Button  backgroundImage=' linear-gradient(15deg, red 0%, violet 100% )' color='white' className='button-wiggle'> LIVE LINK</Button></a>
+                      </Box>
+            </Box>
         </Box>
+        
+        
     </Box>
   )
 }
