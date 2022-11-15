@@ -43,9 +43,6 @@
   100% { color: red; }
 }
 
-.App{
-  font-family: 'Montserrat', sans-serif;
-}
 
 .hover-underline-animation {
   display: inline-block;
@@ -148,66 +145,6 @@
     81% {transform: scale(4) rotate(45deg); opacity: 1; }
     100% {transform: scale(50) rotate(45deg); opacity: 0; }
 }
-.progress{
-    
-    width: 100%;
-    height: 6px;
-    background: #fff;
-    border-radius: 0;
-    box-shadow: none;
-    margin-top: 70px;
-    overflow: visible;
-}
-.progress .progress-bar{
-    box-shadow: none;
-    border-radius: 5px;
-    position: relative;
-    animation: animate-positive 2s;
-}
-.progress .progress-title{
-   
-    min-width: 100px;
-    font-size: 14px;
-    font-weight: 700;
-    color: #282828;
-    line-height: 22px;
-    letter-spacing: 1px;
-    text-align: center;
-    text-transform: uppercase;
-    background: #fff;
-    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.14);
-    position: absolute;
-    top: -10px;
-    left: 0;
-}
-.progress .progress-value{
-    width: 50px;
-    height: 25px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #fff;
-    line-height: 25px;
-    border-radius: 4px;
-    position: absolute;
-    top: -40px;
-    right: 0;
-}
-.progress.pink .progress-bar,
-.progress.pink .progress-value{ background: #ff007f; }
-.progress.green .progress-bar,
-.progress.green .progress-value{ background: #73cd21; }
-.progress.blue .progress-bar,
-.progress.blue .progress-value{ background: #2e9ce0; }
-.progress.yellow .progress-bar,
-.progress.yellow .progress-value{ background: #eea921; }
-.progress.red .progress-bar,
-.progress.red .progress-value{ background: #ff014f; }
-@-webkit-keyframes animate-positive{
-    0%{ width: 0; }
-}
-@keyframes animate-positive{
-    0%{ width: 0; }
-}
 /* skill bar */
 .skills {
   position: relative;
@@ -269,13 +206,19 @@
   width: 70%;
 }
 .progress-line .bootstrap {
-  width: 82%;
+  width: 65%;
 }
 .progress-line .javascript {
-  width: 62%;
+  width: 85%;
 }
-.progress-line .c {
-  width: 90%;
+.progress-line .react {
+  width: 80%;
+}
+.progress-line .java {
+  width: 75%;
+}
+.progress-line .chakra {
+  width: 85%;
 }
 
 .bar .progress-line span::before {
@@ -315,10 +258,16 @@
   content: "82%";
 }
 .progress-line .javascript::after {
-  content: "62%";
+  content: "85%";
 }
-.progress-line .c::after {
-  content: "90%";
+.progress-line .react::after {
+  content: "80%";
+}
+.progress-line .java::after {
+  content: "75%";
+}
+.progress-line .chakra::after {
+  content: "85%";
 }
 
 /* ////........Media Query........//// */
@@ -338,4 +287,57 @@
   transition: 0.5s all ease-in-out;
     transform: scale(1.1)
 }
-/*liquid fill  */
+/* wiggle */
+.button-wiggle {
+  animation: wiggle 4s 2s infinite;
+}
+@keyframes wiggle {
+	5%,
+	50% {
+		transform: scale(1);
+	}
+	10% {
+		transform: scale(0.9);
+	}
+	15% {
+		transform: scale(1.15);
+	}
+	20% {
+		transform: scale(1.15) rotate(-5deg);
+	}
+	25% {
+		transform: scale(1.15) rotate(5deg);
+	}
+	30% {
+		transform: scale(1.15) rotate(-3deg);
+	}
+	35% {
+		transform: scale(1.15) rotate(2deg);
+	}
+	40% {
+		transform: scale(1.15) rotate(0);
+	}
+}
+/*  */
+.custom-shape-divider-bottom-1667552084 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1667552084 svg {
+  position: relative;
+  display: block;
+  width: calc(203% + 1.3px);
+  height: 189px;
+}
+
+.custom-shape-divider-bottom-1667552084 .shape-fill {
+  fill: #DD293F;
+}
+
+

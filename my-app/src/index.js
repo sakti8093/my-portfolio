@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ColorModeScript } from '@chakra-ui/react'
+import theme from './Components/theme'
 import { ChakraProvider } from '@chakra-ui/react'
 import { BrowserRouter } from 'react-router-dom';
 
@@ -11,6 +13,7 @@ root.render(
 
   <ChakraProvider>
     <BrowserRouter>
+    <ColorModeScript initialColorMode={theme.config.initialColorMode} />
     <App />
     </BrowserRouter>
   </ChakraProvider>
