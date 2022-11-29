@@ -97,11 +97,11 @@ export default function Projetcs() {
                   </ListItem>
                   <ListItem>
                     <ListIcon as={CheckCircleIcon} color='green'  />
-                    Covered above 10 categories of news
+                    Login/signup
                   </ListItem>
                   <ListItem>
                     <ListIcon as={CheckCircleIcon} color='green'  />
-                    Create news,Update news,Delete news by admin
+                 Add to cart and Delete from cart
                   </ListItem>
                   </List>
                   <Text>TECH STACK USED</Text>
@@ -116,7 +116,6 @@ export default function Projetcs() {
                     <Box  textAlign='center' borderRadius='10px' border='3px solid violet' >HEROKU</Box>
                     </Grid>
                       <Box  bottom='1' display='flex' gap='20px'  mt='20px' p={4} >
-                     <a href="https://github.com/sakti8093/firstpost" target='blank' >  <Button bg='black' color='white' leftIcon={ <AiFillGithub />} >   GITHUB</Button></a> 
                         <a href="https://tender-goods-clone-sakti.netlify.app/" target='blank'><Button  backgroundImage=' linear-gradient(15deg, red 0%, violet 100% )' color='white' className='button-wiggle'> LIVE LINK</Button></a>
                       </Box>
             </Box>
