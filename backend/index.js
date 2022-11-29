@@ -1,9 +1,17 @@
 import express from 'express'
 import connection from './db.js';
 import nodemailer from 'nodemailer'
+import cors from 'cors'
+
 const app = express();
 
+app.use(cors());
+
 app.use(express.json());
+
+app.get('/',(req, res) =>{
+    res.send('HELLO !! WELCOME TO MY PORTFOLIO BACKEND')
+})
 
 app.post('/sendmail',(req,res)=>{
     if(req.body){
