@@ -64,15 +64,21 @@ export default function About() {
                                     </Box>
                                     <Box className="bar">
                                         <Box className="info">
-                                        <Text color={textColor} >JAVA (DSA)</Text>
+                                        <Text color={textColor} >MOGODB</Text>
                                         </Box>
                                         <Box className="progress-line"><span className="java"></span></Box>
                                     </Box>
                                     <Box className="bar">
                                         <Box className="info">
-                                        <Text color={textColor} >CHAKRA UI</Text>
+                                        <Text color={textColor} >EXPRESS JS</Text>
                                         </Box>
-                                        <Box className="progress-line"><span className="chakra"></span></Box>
+                                        <Box className="progress-line"><span className="expressjs"></span></Box>
+                                    </Box>
+                                    <Box className="bar">
+                                        <Box className="info">
+                                        <Text color={textColor} >NODE JS</Text>
+                                        </Box>
+                                        <Box className="progress-line"><span className="nodejs"></span></Box>
                                     </Box>
                                     </Box>
                                 </Box>

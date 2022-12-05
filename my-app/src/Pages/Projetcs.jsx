@@ -83,7 +83,7 @@ export default function Projetcs() {
                     </Grid>
                       <Box  bottom='1' display='flex' gap='20px'  mt='20px' p={4} >
                      <a href="https://github.com/sakti8093/firstpost" target='blank' >  <Button bg='black' color='white' leftIcon={ <AiFillGithub />} >   GITHUB</Button></a> 
-                        <a href="https://firstpost-clone.netlify.app/view.html" target='blank'><Button  backgroundImage=' linear-gradient(15deg, red 0%, violet 100% )' color='white' className='button-wiggle'> LIVE LINK</Button></a>
+                        <a href="https://firstpost-clone-masai.netlify.app/" target='blank'><Button  backgroundImage=' linear-gradient(15deg, red 0%, violet 100% )' color='white' className='button-wiggle'> LIVE LINK</Button></a>
                       </Box>
             </Box>
             <Box mt='20px' data-aos="fade-up" className='ProjetcsBox' gap='30px' p={1}  borderRadius='20px' >
@@ -93,29 +93,34 @@ export default function Projetcs() {
                  <List p={2}>
                  <ListItem>
                     <ListIcon as={CheckCircleIcon} color='green'  />
-                    Completely Responsive
+                    Completely Responsive full stack website 
                   </ListItem>
                   <ListItem>
                     <ListIcon as={CheckCircleIcon} color='green'  />
-                    Login/signup
+                    Login/signup 
                   </ListItem>
                   <ListItem>
                     <ListIcon as={CheckCircleIcon} color='green'  />
-                 Add to cart and Delete from cart
+                 Personalised cart and Delete from cart with quantity modifier
+                  </ListItem>
+                  <ListItem>
+                    <ListIcon as={CheckCircleIcon} color='green'  />
+                   Search and Sorting
                   </ListItem>
                   </List>
                   <Text>TECH STACK USED</Text>
                   <Grid gridTemplateColumns='repeat(4,1fr)' gap='10px' width='90%' margin='auto'>
-                    <Box  textAlign='center' borderRadius='10px' border='3px solid violet' >JSON </Box>
                     <Box  textAlign='center' borderRadius='10px' border='3px solid violet' >JAVA SCRIPT</Box>
                     <Box  textAlign='center' borderRadius='10px' border='3px solid violet' >HTML</Box>
                     <Box  textAlign='center' borderRadius='10px' border='3px solid violet' >CSS</Box>
                     <Box  textAlign='center' borderRadius='10px' border='3px solid violet' >REACT</Box>
-                    <Box  textAlign='center' borderRadius='10px' border='3px solid violet' >BOOTSTRAP</Box>
+                    <Box  textAlign='center' borderRadius='10px' border='3px solid violet' >MONGODB</Box>
+                    <Box  textAlign='center' borderRadius='10px' border='3px solid violet' >NODEJS</Box>
+                    <Box  textAlign='center' borderRadius='10px' border='3px solid violet' >EXPRESSJS</Box>
                     <Box  textAlign='center' borderRadius='10px' border='3px solid violet' >GIT</Box>
-                    <Box  textAlign='center' borderRadius='10px' border='3px solid violet' >HEROKU</Box>
                     </Grid>
                       <Box  bottom='1' display='flex' gap='20px'  mt='20px' p={4} >
+                      <a href="https://github.com/sakti8093/Tenner-Goods-Clone" target='blank' >  <Button bg='black' color='white' leftIcon={ <AiFillGithub />} >   GITHUB</Button></a> 
                         <a href="https://tender-goods-clone-sakti.netlify.app/" target='blank'><Button  backgroundImage=' linear-gradient(15deg, red 0%, violet 100% )' color='white' className='button-wiggle'> LIVE LINK</Button></a>
                       </Box>
             </Box>

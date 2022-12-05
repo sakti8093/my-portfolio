@@ -209,7 +209,7 @@
   width: 65%;
 }
 .progress-line .javascript {
-  width: 85%;
+  width: 80%;
 }
 .progress-line .react {
   width: 80%;
@@ -219,6 +219,14 @@
 }
 .progress-line .chakra {
   width: 85%;
+}
+
+.progress-line .expressjs {
+  width: 80%;
+}
+
+.progress-line .nodejs {
+  width: 75%;
 }
 
 .bar .progress-line span::before {
@@ -258,7 +266,7 @@
   content: "82%";
 }
 .progress-line .javascript::after {
-  content: "85%";
+  content: "80%";
 }
 .progress-line .react::after {
   content: "80%";
@@ -266,8 +274,12 @@
 .progress-line .java::after {
   content: "75%";
 }
-.progress-line .chakra::after {
-  content: "85%";
+.progress-line .nodejs::after {
+  content: "75%";
+}
+
+.progress-line .expressjs::after {
+  content: "80%";
 }
 
 /* ////........Media Query........//// */
