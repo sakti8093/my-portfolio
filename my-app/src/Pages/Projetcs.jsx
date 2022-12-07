@@ -49,8 +49,8 @@ export default function Projetcs() {
                     <Box  textAlign='center' borderRadius='10px' border='3px solid violet' >HEROKU</Box>
                     </Grid>
                       <Box display='flex' gap='20px'  mt='20px' p={4} >
-                       <a href="https://github.com/sakti8093/boat-lifestyle-clone" target='blank' ><Button bg='black' color='white' leftIcon={ <AiFillGithub />} >   GITHUB</Button></a> 
-                       <a href=" https://www.boat-lifestyle.com/" target='blank'> <Button  backgroundImage=' linear-gradient(15deg, red 0%, violet 100% )' color='white' className='button-wiggle'> LIVE LINK</Button></a>
+                       <a href="https://github.com/sakti8093/boat-lifestyle-clone" target='blank' ><Button bg='black' colorScheme='black' color='white' leftIcon={ <AiFillGithub />} >   GITHUB</Button></a> 
+                       <a href=" https://www.boat-lifestyle.com/" target='blank'> <Button colorScheme='red'  backgroundImage=' linear-gradient(15deg, red 0%, violet 100% )' color='white' className='button-wiggle'> LIVE LINK</Button></a>
                       </Box>
             </Box>
             <Box mt='20px' data-aos="fade-up" className='ProjetcsBox' gap='30px' p={1}  borderRadius='20px' >
@@ -82,8 +82,8 @@ export default function Projetcs() {
                     <Box  textAlign='center' borderRadius='10px' border='3px solid violet' >HEROKU</Box>
                     </Grid>
                       <Box  bottom='1' display='flex' gap='20px'  mt='20px' p={4} >
-                     <a href="https://github.com/sakti8093/firstpost" target='blank' >  <Button bg='black' color='white' leftIcon={ <AiFillGithub />} >   GITHUB</Button></a> 
-                        <a href="https://firstpost-clone-masai.netlify.app/" target='blank'><Button  backgroundImage=' linear-gradient(15deg, red 0%, violet 100% )' color='white' className='button-wiggle'> LIVE LINK</Button></a>
+                     <a href="https://github.com/sakti8093/firstpost" target='blank' >  <Button bg='black' colorScheme='black' color='white' leftIcon={ <AiFillGithub />} >   GITHUB</Button></a> 
+                        <a href="https://firstpost-clone-masai.netlify.app/" target='blank'><Button colorScheme='red'  backgroundImage='linear-gradient(15deg, red 0%, violet 100% )' color='white' className='button-wiggle'> LIVE LINK</Button></a>
                       </Box>
             </Box>
             <Box mt='20px' data-aos="fade-up" className='ProjetcsBox' gap='30px' p={1}  borderRadius='20px' >
@@ -120,8 +120,8 @@ export default function Projetcs() {
                     <Box  textAlign='center' borderRadius='10px' border='3px solid violet' >GIT</Box>
                     </Grid>
                       <Box  bottom='1' display='flex' gap='20px'  mt='20px' p={4} >
-                      <a href="https://github.com/sakti8093/Tenner-Goods-Clone" target='blank' >  <Button bg='black' color='white' leftIcon={ <AiFillGithub />} >   GITHUB</Button></a> 
-                        <a href="https://tender-goods-clone-sakti.netlify.app/" target='blank'><Button  backgroundImage=' linear-gradient(15deg, red 0%, violet 100% )' color='white' className='button-wiggle'> LIVE LINK</Button></a>
+                      <a href="https://github.com/sakti8093/Tenner-Goods-Clone" target='blank' >  <Button colorScheme='black' bg='black' color='white' leftIcon={ <AiFillGithub />} >   GITHUB</Button></a> 
+                        <a href="https://tender-goods-clone-sakti.netlify.app/" target='blank'><Button colorScheme='red'  backgroundImage=' linear-gradient(15deg, red 0%, violet 100% )' color='white' className='button-wiggle'> LIVE LINK</Button></a>
                       </Box>
             </Box>
         </Box>

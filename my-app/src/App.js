@@ -9,6 +9,7 @@ import Projetcs from './Pages/Projetcs';
 import Contact from './Pages/Contact';
 import Footer from './Pages/Footer';
 import Git from './Pages/Github';
+import { Miniprojects } from './Pages/Miniprojects';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
     <Box className='App' width={{ base:'97%' , sm:'fill' ,md:'80%' ,lg:'80%' }}  margin='auto' marginTop='30px' >
       <About/>
       <Projetcs/>
+      <Miniprojects/>
       <Git/>
       <Contact/>
     </Box>
