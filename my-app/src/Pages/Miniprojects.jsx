@@ -4,6 +4,7 @@ import {CheckCircleIcon } from '@chakra-ui/icons'
 import { Box, Grid, GridItem, Image, Text ,Button, UnorderedList, List, ListItem, ListIcon} from '@chakra-ui/react'
 import weather from '../Assets/weather.png'
 import tic from '../Assets/tic.png'
+import todo from '../Assets/todo.png'
 export const Miniprojects = () => {
   return (
     <Box>
@@ -40,8 +41,8 @@ export const Miniprojects = () => {
                        <a href="https://weather-forecast-app-sakti.netlify.app" target='blank'> <Button  backgroundImage='linear-gradient(15deg, red 0%, violet 100% )' color='white' colorScheme='red' className='button-wiggle'> LIVE LINK</Button></a>
                       </Box>
                </Box>
-               {/* <Box  mt='20px' data-aos="fade-up" className='ProjetcsBox' gap='30px' p={1}  >
-              <Image width='fill' height='350px' margin='auto'   borderRadius='20px' />
+               <Box  mt='20px' data-aos="fade-up" className='ProjetcsBox' gap='30px' p={1}  >
+              <Image width='fill' src={todo} height='350px' margin='auto'   borderRadius='20px' />
                  <Text fontWeight={1000}>TODO-APP</Text>
                  <Text width='90%' margin='auto' >Todo App is a app where you can add ,edit and delete todos</Text>
                   <Grid gridTemplateColumns='repeat(4,1fr)' gap='10px' width='90%' margin='auto'>
@@ -53,10 +54,10 @@ export const Miniprojects = () => {
                     <Box  textAlign='center' borderRadius='10px' border='3px solid violet' >Express js</Box>
                     </Grid>
                       <Box display='flex' gap='20px'  mt='20px' p={4} >
-                       <a href="https://github.com/sakti8093/boat-lifestyle-clone" target='blank' ><Button bg='black' color='white' leftIcon={ <AiFillGithub />} >   GITHUB</Button></a> 
-                       <a href=" https://www.boat-lifestyle.com/" target='blank'> <Button  backgroundImage=' linear-gradient(15deg, red 0%, violet 100% )' color='white' className='button-wiggle'> LIVE LINK</Button></a>
+                       <a href="https://github.com/sakti8093/Todo-App" target='blank' ><Button bg='black' colorScheme='black' color='white' leftIcon={ <AiFillGithub />} >   GITHUB</Button></a> 
+                       <a href="https://todo-app-sakti.netlify.app/" target='blank'> <Button  backgroundImage=' linear-gradient(15deg, red 0%, violet 100% )' color='white' className='button-wiggle'> LIVE LINK</Button></a>
                       </Box>
-               </Box> */}
+               </Box>
          </Box>
     </Box>
   )
